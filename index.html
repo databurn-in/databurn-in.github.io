@@ -3,62 +3,111 @@
 <title>DataBurn</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link href='https://blog.databurn.in/favicon.ico' rel='icon' type='image/x-icon'/>
+<link href='https://blog.databurn.in/favicon.ico' rel='icon' type='image/x-icon' />
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet"  href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+<link rel="stylesheet"
+      href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
 <style>
-body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
-.w3-bar,h1,button {font-family: "Montserrat", sans-serif}
-.fa-anchor,.fa-coffee {font-size:200px}
+      body,
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+            font-family: "Lato", sans-serif
+      }
+
+      .w3-bar,
+      h1,
+      button {
+            font-family: "Montserrat", sans-serif
+      }
+
+      .fa-anchor,
+      .fa-coffee {
+            font-size: 200px
+      }
 </style>
+
 <body>
 
 
-<!-- Header -->
-<header class="w3-container w3-orange w3-center" style="padding:128px 16px">
+      <!-- Header -->
+      <header class="w3-container w3-orange w3-center" style="padding:128px 16px">
 
-<img src="https://raw.githubusercontent.com/databurn-in/databurn-in.github.io/master/databurn-logo.png" height="82" width="62">
-  <h1 class="w3-margin w3-jumbo">DataBurn</h1>
-  <p class="w3-xlarge">data, privacy, security and open source.</p>
-</header>
+            <img src="https://raw.githubusercontent.com/databurn-in/databurn-in.github.io/master/databurn-logo.png"
+                  height="82" width="62">
+            <h1 class="w3-margin w3-jumbo">DataBurn</h1>
+            <p class="w3-xlarge">data, privacy and security.</p>
+      </header>
 
-<!-- First Grid -->
-<div class="w3-container w3-center">
-      <h1>Who we are</h1>
-      <h5 class="w3-padding-32 w3-margin-left w3-margin-right">
-      We are a not-for-profit group of software developers and security enthusiasts trying to make digital privacy and security understandable and accessible to everyone.
-      <br><br>
-      <a href="#" class="w3-button w3-orange">Join Us!</a>
-      </h5>
-</div>
+      <!-- First Grid -->
+      <div class="w3-container w3-center">
+            <h1>Who we are</h1>
+            <h5 class="w3-padding-32 w3-margin-left w3-margin-right">
+                  We are a not-for-profit group of software developers and security enthusiasts trying to make digital
+                  privacy and
+                  security understandable and accessible to everyone.
+                  <br><br>
+                  <a onclick="document.getElementById('joinUsModal').style.display='block'"
+                        class="w3-button w3-orange">Join Us!</a>
+            </h5>
+      </div>
 
-<!-- Second Grid -->
-<div class="w3-container w3-center">
-      <h1>What we do</h1>
-      <h5 class="w3-padding-32 w3-margin-left w3-margin-right">
-      Our primary objective is to do research in the fields of digital privacy and security. We also believe that this research should be freely accessible to everyone. We publish about the research work on our blog.
-<br><br>
-<a href="https://blog.databurn.in/" class="w3-button w3-orange" target="_blank">Visit our blog!</a>
-      </h5>
-</div>
+      <!-- Second Grid -->
+      <div class="w3-container w3-center">
+            <h1>What we do</h1>
+            <h5 class="w3-padding-32 w3-margin-left w3-margin-right">
+                  Our primary objective is to do research in the fields of digital privacy and security. We try to build
+                  secure software and find vulnerabilities and privacy issues in various systems. We publish our
+                  research articles and updates on our blog.
+                  <br><br>
+                  <a href="https://blog.databurn.in/" class="w3-button w3-orange" target="_blank">Visit our blog!</a>
+            </h5>
+      </div>
 
-<!-- Third Grid -->
-<div class="w3-container w3-center">
-      <h1>Open Source</h1>
-      <h5 class="w3-padding-32 w3-margin-left w3-margin-right">
-      The products and proof-of-concepts that we build are distributed as Open Source Software.
-      <br><br>
-      <a href="https://github.com/databurn-in" class="w3-button w3-orange" target="_blank">Visit our Github repository!</a>
-      </h5>
-</div>
+      <!-- Third Grid -->
+      <div class="w3-container w3-center">
+            <h1>Open Source</h1>
+            <h5 class="w3-padding-32 w3-margin-left w3-margin-right">
+                  The products and proof-of-concepts that we build are distributed as Open Source Software.
+                  <br><br>
+                  <a href="https://github.com/databurn-in" class="w3-button w3-orange" target="_blank">Visit our Github
+                        repository!</a>
+            </h5>
+      </div>
 
-<!-- Footer -->
-<footer class="w3-container w3-center w3-opacity">  
- <p>DataBurn © 2020</p>
-</footer>
+      <!-- Footer -->
+      <footer class="w3-container w3-center w3-opacity">
+            <p>DataBurn © 2020</p>
+      </footer>
+
+      <div id="joinUsModal" class="w3-modal">
+            <div class="w3-modal-content w3-animate-top w3-card-4">
+                  <header class="w3-container w3-orange">
+                        <span onclick="document.getElementById('joinUsModal').style.display='none'"
+                              class="w3-button w3-display-topright">&times;</span>
+                        <h2>Join Us!</h2>
+                  </header>
+                  <div class="w3-container">
+                        <p>If you are interested in what we do and want to contribute to the Open Source Software
+                              community, then you can join us!
+                              Just mail us at <span class="w3-indigo">nkdesai409@gmail.com</span>. Describe your
+                              skillsets, your Github profile link and why you are interested to join us.
+                              We will be replying back to you within 2 days and if we find you suitable for our mission,
+                              we will be sending you the invite to join our organization on Github.
+                              After you join us on Github, you can start
+                              contributing!
+                        </p>
+                  </div>
+            </div>
+      </div>
+      </div>
 
 </body>
+
 </html>
